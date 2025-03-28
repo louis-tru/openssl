@@ -159,7 +159,7 @@
         'defines': ['<@(openssl_default_defines_not_win)'],
         'cflags': ['-Wno-missing-field-initializers'],
         'conditions': [
-          ['OS=="mac"', {
+          ['OS in "mac ios"', {
             'defines': ['<@(openssl_default_defines_mac)'],
           }, {
             'defines': ['<@(openssl_default_defines_linux_others)'],
